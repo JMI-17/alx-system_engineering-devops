@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -exec cp --update {} .. ls -la
+for file in *.html; do [ "$file" -nt "../$file" ] || cp "$file" "../$file"; done
