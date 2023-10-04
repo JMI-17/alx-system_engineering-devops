@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p | grep -E 'declare -[a|f] '
+compgen -A variable -A function | compgen -e
