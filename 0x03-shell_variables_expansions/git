@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory containing your local Git repository
-repo_directory="/root/alx/alx-system_engineering-devops/0x03-shell_variables_expansions"
+repo_directory=/root/alx/alx-system_engineering-devops/0x03-shell_variables_expansions
 
 # Change to the repository directory
 cd "$repo_directory" || exit
