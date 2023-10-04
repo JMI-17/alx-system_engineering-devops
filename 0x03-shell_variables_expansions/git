@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Directory containing your local Git repository
+repo_directory="/root/alx/alx-system_engineering-devops/0x03-shell_variables_expansions"
+
+# Change to the repository directory
+cd "$repo_directory" || exit
+
+# Get the name of the last edited file
+last_edited_file=$(git log -1 --name-only --pretty=format:"" | tail -n 1)
+
+# Add all changes to the staging area
+git add .
+
+# Commit with the commit message 'Test' and the last edited file's name
+git commit -m 'Test - Last edited file: $last_edited_file'
+
+# Push the changes to the remote GitHub repository (change 'origin' to your remote's name)
+git push alx-system_engineering-devops master
