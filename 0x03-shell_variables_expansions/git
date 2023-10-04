@@ -16,4 +16,4 @@ git add .
 git commit -m 'Test - Last edited file: $last_edited_file'
 
 # Push the changes to the remote GitHub repository (change 'origin' to your remote's name)
-git push https://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@github.com/JMI-17/alx-system_engineering-devops.git master
+git push https://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@github.com/JMI-17/alx-system_engineering-devops.git master
