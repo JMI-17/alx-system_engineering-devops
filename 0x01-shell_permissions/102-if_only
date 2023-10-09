@@ -1,2 +1,3 @@
+[200~
 #!/bin/bash
-[ "$(stat -c %U hello)" = "guillaume" ] [ -n "$(chown betty hello 2>&1)" ]
+[ "$(stat -c %U hello)" = "guillaume" ] | chown betty hello
