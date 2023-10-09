@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo chown betty:betty hello; stat -c "%U" hello
+sudo chown betty:betty hello
+stat -c "%U" hello
